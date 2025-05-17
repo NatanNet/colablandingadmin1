@@ -1,0 +1,89 @@
+/* public/css/style.css */
+.hero {
+    background-image: url('/images/basket8.jpeg'); /* Path relatif ke folder public/images */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 120px 0; /* Padding untuk area hero */
+}
+
+
+
+.hero h1 {
+    font-size: 4rem; /* Ukuran font judul */
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.5rem; /* Ukuran font deskripsi */
+    margin-bottom: 30px;
+}
+
+.hero .form-control {
+    width: 500px; /* Lebar input sesuai gambar */
+    height: 50px; /* Tinggi input untuk menyesuaikan */
+    font-size: 1.1rem; /* Ukuran font dalam input */
+}
+
+.hero .btn-primary {
+    font-size: 1rem; /* Ukuran font tombol */
+    height: 50px; /* Ukuran tinggi tombol */
+    padding: 0 30px; /* Padding kiri dan kanan */
+}
+
+.card-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Navbar Styling */
+.navbar {
+    border-bottom: 3px solid #007bff; /* Menambahkan garis biru di bawah navbar */
+}
+
+/* Navbar Styling */
+.navbar .navbar-nav .nav-link.active {
+    border-bottom: 3px solid #007bff; /* Garis biru di bawah item menu aktif */
+    font-weight: bold; /* Agar teks lebih tebal */
+}
+
+/* Styling Navbar agar garis hanya muncul di bawah menu aktif */
+.navbar .navbar-nav .nav-link {
+    padding-bottom: 10px; /* Memberikan ruang bawah agar garis terlihat lebih rapi */
+}
+
+.navbar .nav-item .nav-link:hover {
+    color: #007bff; /* Warna biru saat hover */
+}
+
+
+/* Menambahkan styling pada tombol Login */
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    font-size: 1rem;
+    padding: 10px 20px;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+/* CSS untuk membuat tulisan "SportEase" menjadi bold */
+.navbar .navbar-brand {
+    font-weight: bold;
+}
+

@@ -1,19 +1,13 @@
-<!-- untuk event -->
-<img src="{{ Storage::url($event->banner_image) }}" alt="Banner" class="img-fluid mb-3">
+@extends('layouts.app')
 
-<div>
-    <h1>{{ $event->nama_event }}</h1>
-    <p>{{ $event->deskripsi }}</p>
-    <p><strong>Waktu:</strong> {{ $event->waktu->format('d-m-Y H:i') }}</p>
-    <p><strong>Lokasi:</strong> {{ $event->lokasi }}</p>
-</div>
-
-<!-- untuk kegiatan -->
-<img src="{{ Storage::url($kegiatan->banner_image) }}" alt="Banner" class="img-fluid mb-3">
-
-<div>
-    <h1>{{ $kegiatan->nama_kegiatan }}</h1>
-    <p>{{ $kegiatan->deskripsi }}</p>
-    <p><strong>Waktu:</strong> {{ $kegiatan->waktu->format('d-m-Y H:i') }}</p>
-    <p><strong>Lokasi:</strong> {{ $kegiatan->lokasi }}</p>
-</div>
+@section('content')
+<section class="py-5">
+  <div class="container">
+    <h1>{{ $event['title'] }}</h1>
+    <img src="{{ asset('images/' . $event['image']) }}" class="img-fluid mb-4" alt="{{ $event['title'] }}">
+    <p><strong>Date:</strong> {{ $event['date'] }}</p>
+    <p>{{ $event['description'] }}</p>
+    <a href="{{ url()->previous() }}" class="btn btn-secondary mt-3">Back</a>
+  </div>
+</section>
+@endsection
