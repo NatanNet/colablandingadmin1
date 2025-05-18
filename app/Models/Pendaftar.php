@@ -9,12 +9,18 @@ class Pendaftar extends Model
 {
     use HasFactory;
 
-    // Menambahkan kolom yang boleh diisi secara massal
+    // Nama tabel (kalau nama tabel bukan plural dari model)
+    protected $table = 'pendaftars';
+
+    // Jika kamu ingin otomatis timestamps (created_at dan updated_at)
+    public $timestamps = true;
+
+    // Kolom yang bisa diisi secara massal
     protected $fillable = [
-        'name', 
-        'phone_number', 
-        'alamat', 
-        'kategori_olahraga', 
+        'name',
+        'phone_number',
+        'alamat',
+        'kategori_olahraga',
         'status',
     ];
 }

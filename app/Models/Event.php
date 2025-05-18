@@ -8,19 +8,12 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Event extends Model
 {
-    protected static function booted()
-    {
-        // Hook ketika event dihapus
-        static::deleted(function ($event) {
-            // Menghapus gambar yang terkait dengan event setelah dihapus
-            if ($event->banner_image) {
-                Storage::disk('public')->delete($event->banner_image);
-            }
-        });
-    }
-    use HasFactory;
+    use HasFactory;  // Biasakan trait ditaruh di awal setelah deklarasi class
 
-    // Menambahkan kolom yang ingin diisi secara massal
+    // Menentukan nama primary key yang digunakan
+    protected $primaryKey = 'id_event';  // Jika primary key Anda adalah 'id_event'
+
+    // Menambahkan kolom yang bisa diisi massal
     protected $fillable = [
         'nama_event',
         'deskripsi',
@@ -28,10 +21,17 @@ class Event extends Model
         'waktu',
         'hari',
         'tanggal_mulai',
-        'tanggal_selesai',   // Menambahkan tanggal_selesai ke dalam fillable
+        'tanggal_selesai',
         'banner_image',
     ];
 
-    // Menentukan nama primary key yang digunakan
-    protected $primaryKey = 'id_event';  // Jika primary key Anda adalah 'id_event'
+    // Hook ketika event dihapus untuk menghapus file banner image terkait
+    protected static function booted()
+    {
+        static::deleted(function ($event) {
+            if ($event->banner_image) {
+                Storage::disk('public')->delete($event->banner_image);
+            }
+        });
+    }
 }
