@@ -8,12 +8,10 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Event extends Model
 {
-    use HasFactory;  // Biasakan trait ditaruh di awal setelah deklarasi class
+    use HasFactory;
 
-    // Menentukan nama primary key yang digunakan
-    protected $primaryKey = 'id_event';  // Jika primary key Anda adalah 'id_event'
+    protected $primaryKey = 'id_event';
 
-    // Menambahkan kolom yang bisa diisi massal
     protected $fillable = [
         'nama_event',
         'deskripsi',
@@ -25,13 +23,19 @@ class Event extends Model
         'banner_image',
     ];
 
-    // Hook ketika event dihapus untuk menghapus file banner image terkait
+    // Hapus file banner saat event dihapus
     protected static function booted()
     {
         static::deleted(function ($event) {
-            if ($event->banner_image) {
+            if ($event->banner_image && Storage::disk('public')->exists($event->banner_image)) {
                 Storage::disk('public')->delete($event->banner_image);
             }
         });
+    }
+
+    // Tambahkan accessor agar banner_image jadi full URL
+    public function getBannerImageAttribute($value)
+    {
+        return $value ? asset('storage/' . $value) : null;
     }
 }

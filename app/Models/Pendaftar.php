@@ -16,6 +16,10 @@ class Pendaftar extends Model
     public $timestamps = true;
 
     // Kolom yang bisa diisi secara massal
+    protected $attributes = [
+        'status' => 'pending', // default value
+    ];
+
     protected $fillable = [
         'name',
         'phone_number',

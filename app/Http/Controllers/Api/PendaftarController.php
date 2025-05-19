@@ -17,7 +17,7 @@ class PendaftarController extends Controller
             'phone_number' => 'required|string|max:50',
             'alamat' => 'required|string',
             'kategori_olahraga' => 'required|string',
-            'status' => 'nullable|string|in:pending,approved,rejected',
+//            'status' => 'nullable|string|in:pending,approved,rejected',
         ]);
 
         if ($validator->fails()) {
@@ -30,11 +30,11 @@ class PendaftarController extends Controller
 
         // Buat data pendaftar baru
         $pendaftar = Pendaftar::create([
-            'name' => $request->name,
-            'phone_number' => $request->phone_number,
-            'alamat' => $request->alamat,
-            'kategori_olahraga' => $request->kategori_olahraga,
-            'status' => $request->status ?? 'pending',
+            'name' => $request->input('name'),
+            'phone_number' => $request->input('phone_number'),
+            'alamat' => $request->input('alamat'),
+            'kategori_olahraga' => $request->input('kategori_olahraga'),
+            'status' => $request->input('status', 'pending'), // default pending
         ]);
 
         return response()->json([
