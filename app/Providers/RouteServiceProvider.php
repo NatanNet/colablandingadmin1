@@ -21,6 +21,7 @@ class RouteServiceProvider extends ServiceProvider
         });
     }
 
+
     protected function mapWebRoutes()
     {
         Route::middleware('web')

@@ -1,10 +1,12 @@
 <?php
 
+use App\Http\Controllers\Controller;
+use App\Http\Controllers\LandingPageController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/landing', function () {
-    return view('landing');
-});
+
+Route::get('/landing',[LandingPageController::class,'landing']);
+
 Route::middleware('api')->group(function () {
     Route::get('/tes', function () {
         return response()->json(['message' => 'API route works in web.php']);

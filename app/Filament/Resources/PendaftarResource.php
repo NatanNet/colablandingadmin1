@@ -6,6 +6,8 @@ use App\Filament\Resources\PendaftarResource\Pages;
 use App\Models\Pendaftar;
 use Filament\Forms;
 use Filament\Forms\Form;
+//use Filament\Pages\Actions\EditAction;
+use Filament\Tables\Actions\EditAction;
 use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Table;
@@ -42,15 +44,15 @@ class PendaftarResource extends Resource
     public static function form(Form $form): Form
     {
         return $form->schema([
-            TextInput::make('name')->required()->maxLength(255),
-            TextInput::make('phone_number')->required(),
-            Textarea::make('alamat')->required(),
+            TextInput::make('name')->required()->maxLength(255)->disabled(),
+            TextInput::make('phone_number')->required()->maxLength(14)->disabled(),
+            Textarea::make('alamat')->required()->maxLength(255)->disabled(),
             Select::make('kategori_olahraga')->options([
                 'football' => 'Football',
                 'basketball' => 'Basketball',
                 'volleyball' => 'Volleyball',
                 'badminton' => 'Badminton',
-            ])->required(),
+            ])->required()->disabled(),
             Select::make('status')->options([
                 'pending' => 'Pending',
                 'approved' => 'Approved',
@@ -78,7 +80,9 @@ class PendaftarResource extends Resource
                     'rejected' => 'Rejected',
                 ]),
             ])
-            ->actions([]); // Menonaktifkan semua aksi baris
+            ->actions([
+                EditAction::make(),
+            ]); // Menonaktifkan semua aksi baris
     }
 
     public static function getRelations(): array
