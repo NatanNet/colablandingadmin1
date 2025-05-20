@@ -15,7 +15,7 @@ use Filament\Tables\Columns\ImageColumn;
 use Filament\Resources\Pages\ListRecords;
 use Illuminate\Database\Eloquent\Builder;
 use Filament\Resources\Pages\CreateRecord;
-use Filament\Forms\Components\FileUpload;   
+use Filament\Forms\Components\FileUpload;
 use App\Filament\Resources\KegiatanResource\Pages;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 use App\Filament\Resources\KegiatanResource\RelationManagers;
@@ -24,7 +24,7 @@ class KegiatanResource extends Resource
 {
     protected static ?string $model = Kegiatan::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static ?string $navigationIcon = 'heroicon-o-flag';
 
     public static function form(Form $form): Form
     {
@@ -51,7 +51,7 @@ class KegiatanResource extends Resource
                 'Jumat' => 'Jumat',
                 'Sabtu' => 'Sabtu',
                 'Minggu' => 'Minggu',
-               
+
             ])
             ->required()
             ->label('Hari'),
@@ -84,7 +84,7 @@ class KegiatanResource extends Resource
                     ->sortable()
                     ->label('Waktu Kegiatan')
                     ->formatStateUsing(fn ($state) => $state ? Carbon::parse($state)->format('d-m-Y H:i') : '-'),
-                    
+
                     ImageColumn::make('banner_image') // Menampilkan gambar banner
                     ->label('Banner Gambar')
                     ->disk('public')

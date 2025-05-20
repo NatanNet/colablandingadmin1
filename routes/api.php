@@ -1,6 +1,7 @@
 <?php
-
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Api\EventController;
+use App\Http\Controllers\Api\PendaftarController;
 
-Route::get('events', [EventController::class, 'index']);
+Route::middleware('api')->group(function () {
+    Route::post('/pendaftar', [PendaftarController::class, 'store']);
+});
