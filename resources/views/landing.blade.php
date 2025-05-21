@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         .hero {
-            background: url('{{ asset('storage/images/bg.jpg') }}') no-repeat center center/cover;
+            background: url('{{ asset('storage/images/olahraga11.jpg') }}') no-repeat center center/cover;
             padding: 100px 20px;
             color: white;
             text-align: center;
@@ -53,7 +53,7 @@
 
 <!-- Upcoming Events -->
 <div class="container mt-5" id="upcoming-events">
-    <h2 class="text-center mb-4">Upcoming Events</h2>
+    <h2 class="text-center mb-4">Events Yang Akan Datang</h2>
     <div class="card-container">
         @foreach($events->take(3) as $event)
             <div class="card" style="width: 18rem;">
@@ -70,7 +70,7 @@
 
 <!-- Kegiatan Section -->
 <div class="container mt-5" id="kegiatan">
-    <h2 class="text-center mb-4">Kegiatan Terbaru</h2>
+    <h2 class="text-center mb-4">Kegiatan Olahraga</h2>
     <div class="card-container">
         @foreach($kegiatans->take(3) as $kegiatan)
             <div class="card" style="width: 18rem;">
@@ -85,20 +85,6 @@
     </div>
 </div>
 
-<!-- Popular Sports -->
-<div class="container mt-5 mb-5" id="popular-sports">
-    <h2 class="text-center mb-4">Popular Sports</h2>
-    <div class="card-container">
-        @foreach($popularCategories as $category => $count)
-            <div class="card" style="width: 18rem;">
-                <img src="{{ asset('images/' . strtolower($category) . '.jpg') }}" class="card-img-top" alt="{{ $category }}">
-                <div class="card-body">
-                    <h5 class="card-title">{{ ucfirst($category) }} ({{ $count }})</h5>
-                </div>
-            </div>
-        @endforeach
-    </div>
-</div>
 
 <!-- Footer -->
 <footer class="bg-dark text-white text-center py-4">

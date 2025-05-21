@@ -5,7 +5,7 @@ use App\Http\Controllers\LandingPageController;
 use Illuminate\Support\Facades\Route;
 
 
-Route::get('/landing',[LandingPageController::class,'landing']);
+Route::get('/',[LandingPageController::class,'landing']);
 
 Route::middleware('api')->group(function () {
     Route::get('/tes', function () {
