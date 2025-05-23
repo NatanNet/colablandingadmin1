@@ -41,7 +41,7 @@
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
 
-      <a href="index.html" class="logo d-flex align-items-center me-auto">
+      <a class="logo d-flex align-items-center me-auto" style="pointer-events: none;">  
         <img src="assets/img/sporteasebaru2.png" alt="">
         <!-- Uncomment the line below if you also wish to use an text logo -->
         <!-- <h1 class="sitename">TheEvent</h1>  -->
@@ -198,7 +198,9 @@
 
           <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="member">
+              <a href="assets/img/speakers/speaker-1.jpg" class="glightbox" data-gallery="speakers-gallery"> 
               <img src="assets/img/speakers/speaker-1.jpg" class="img-fluid" alt="">
+              </a>
               <div class="member-info">
                 <div class="member-info-content">
                   <h4><a href="speaker-details.html">Walter White</a></h4>
@@ -216,7 +218,9 @@
 
           <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="member">
+              <a href="assets/img/speakers/speaker-2.jpg" class="glightbox" data-gallery="speakers-gallery"> 
               <img src="assets/img/speakers/speaker-2.jpg" class="img-fluid" alt="">
+              </a>
               <div class="member-info">
                 <div class="member-info-content">
                   <h4><a href="speaker-details.html">Hubert Hirthe</a></h4>
@@ -234,7 +238,9 @@
 
           <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
             <div class="member">
+              <a href="assets/img/speakers/speaker-3.jpg" class="glightbox" data-gallery="speakers-gallery"> 
               <img src="assets/img/speakers/speaker-3.jpg" class="img-fluid" alt="">
+              </a>
               <div class="member-info">
                 <div class="member-info-content">
                   <h4><a href="speaker-details.html">Amanda Jepson</a></h4>
@@ -252,7 +258,9 @@
 
           <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
             <div class="member">
+              <a href="assets/img/speakers/speaker-4.jpg" class="glightbox" data-gallery="speakers-gallery"> 
               <img src="assets/img/speakers/speaker-4.jpg" class="img-fluid" alt="">
+              </a>
               <div class="member-info">
                 <div class="member-info-content">
                   <h4><a href="speaker-details.html">William Anderson</a></h4>
