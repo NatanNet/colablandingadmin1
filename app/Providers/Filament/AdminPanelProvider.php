@@ -26,9 +26,11 @@ class AdminPanelProvider extends PanelProvider
             ->default()
             ->id('admin')
             ->path('admin')
+            ->passwordReset()
+            ->emailVerification()
             ->login()
             ->colors([
-                'primary' => Color::Amber,
+                'primary' => Color::Blue,
             ])
             ->brandName('SportEase') //Ubah Laravel jadi Nama Web
             ->discoverResources(in: app_path('Filament/Resources'), for: 'App\\Filament\\Resources')
