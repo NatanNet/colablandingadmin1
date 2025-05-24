@@ -92,7 +92,7 @@
               </a>
               <div class="member-info">
                 <div class="member-info-content">
-                  <h4><a href="speaker-details.html">Bulu Tangkis</a></h4>
+                  <h4><a href="event-detail.blade.php">Bulu Tangkis</a></h4>
                   <span>Senin, 1 Juni 2025</span>
                 </div>
                 <div class="social">
@@ -112,7 +112,7 @@
               </a>
               <div class="member-info">
                 <div class="member-info-content">
-                  <h4><a href="{{ route('event.details', 'futsal') }}">Futsal</a></h4>
+                  <h4><a href="speaker-details.html">Basket</a></h4>
                   <span>Selasa, 2 Juni 2025</span>
                 </div>
                 <div class="social">
