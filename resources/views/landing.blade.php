@@ -68,7 +68,7 @@
           <div class="row">
             <div class="col-lg-6">
               <h2>Tentang Koni Nganjuk</h2>
-              <p>Selamat Datang di Web KONI Kota Nganjuk</p>
+              <p>Selamat Datang di Web KONI Kabupaten Nganjuk</p>
               <p>Komite Olahraga Nasional Indonesia (KONI) adalah satu-satunya organisasi yang berwenang dan bertanggung jawab mengelola, membina, mengembangkan & mengkoordinasikan seluruh pelaksanaan kegiatan olahraga prestasi setiap anggota di Indonesia.</p>
             </div>
           </div>
@@ -87,19 +87,13 @@
         <div class="row gy-4">
           <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="member">
-              <a href="{{ asset('assets/img/speakers/speaker-1.jpg') }}" class="glightbox" data-gallery="speakers-gallery">
-                <img src="{{ asset('assets/img/speakers/speaker-1.jpg') }}" class="img-fluid" alt="">
+              <a href="{{ asset('assets/img/bminton1.jpeg') }}" class="glightbox" data-gallery="speakers-gallery">
+                <img src="{{ asset('assets/img/bminton1.jpeg') }}" class="img-fluid" alt="">
               </a>
               <div class="member-info">
                 <div class="member-info-content">
                   <h4><a href="event-detail.blade.php">Bulu Tangkis</a></h4>
                   <span>Senin, 1 Juni 2025</span>
-                </div>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
                 </div>
               </div>
             </div>
@@ -107,19 +101,13 @@
 
           <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="member">
-              <a href="{{ asset('assets/img/speakers/speaker-2.jpg') }}" class="glightbox" data-gallery="speakers-gallery">
-                <img src="{{ asset('assets/img/speakers/speaker-2.jpg') }}" class="img-fluid" alt="">
+              <a href="{{ asset('assets/img/basket6.jpg') }}" class="glightbox" data-gallery="speakers-gallery">
+                <img src="{{ asset('assets/img/basket6.jpg') }}" class="img-fluid" alt="">
               </a>
               <div class="member-info">
                 <div class="member-info-content">
                   <h4><a href="speaker-details.html">Basket</a></h4>
                   <span>Selasa, 2 Juni 2025</span>
-                </div>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
                 </div>
               </div>
             </div>
@@ -127,19 +115,13 @@
         
           <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="member">
-              <a href="{{ asset('assets/img/speakers/speaker-1.jpg') }}" class="glightbox" data-gallery="speakers-gallery">
-                <img src="{{ asset('assets/img/speakers/speaker-1.jpg') }}" class="img-fluid" alt="">
+              <a href="{{ asset('assets/img/futsal1.jpeg') }}" class="glightbox" data-gallery="speakers-gallery">
+                <img src="{{ asset('assets/img/futsal1.jpeg') }}" class="img-fluid" alt="">
               </a>
               <div class="member-info">
                 <div class="member-info-content">
-                  <h4><a href="speaker-details.html">Basket</a></h4>
+                  <h4><a href="speaker-details.html">Futsal</a></h4>
                   <span>Rabu, 3 Juni 2025</span>
-                </div>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
                 </div>
               </div>
             </div>
@@ -147,19 +129,13 @@
         
         <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="member">
-              <a href="{{ asset('assets/img/speakers/speaker-1.jpg') }}" class="glightbox" data-gallery="speakers-gallery">
-                <img src="{{ asset('assets/img/speakers/speaker-1.jpg') }}" class="img-fluid" alt="">
+              <a href="{{ asset('assets/img/voly1.jpeg') }}" class="glightbox" data-gallery="speakers-gallery">
+                <img src="{{ asset('assets/img/voly1.jpeg') }}" class="img-fluid" alt="">
               </a>
               <div class="member-info">
                 <div class="member-info-content">
                   <h4><a href="speaker-details.html">Voli</a></h4>
                   <span>Kamis, 4 Juni 2025</span>
-                </div>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
                 </div>
               </div>
             </div>
@@ -183,19 +159,13 @@
         <div class="row gy-4">
           <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="member">
-              <a href="{{ asset('assets/img/speakers/speaker-1.jpg') }}" class="glightbox" data-gallery="speakers-gallery">
-                <img src="{{ asset('assets/img/speakers/speaker-1.jpg') }}" class="img-fluid" alt="">
+              <a href="{{ asset('assets/img/karate2.jpeg') }}" class="glightbox" data-gallery="speakers-gallery">
+                <img src="{{ asset('assets/img/karate2.jpeg') }}" class="img-fluid" alt="">
               </a>
               <div class="member-info">
                 <div class="member-info-content">
                   <h4><a href="speaker-details.html">Karate</a></h4>
                   <span>Sabtu dan Minggu</span>
-                </div>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
                 </div>
               </div>
             </div>
@@ -203,20 +173,14 @@
 
           <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="member">
-              <a href="{{ asset('assets/img/speakers/speaker-1.jpg') }}" class="glightbox" data-gallery="speakers-gallery">
-                <img src="{{ asset('assets/img/speakers/speaker-1.jpg') }}" class="img-fluid" alt="">
+              <a href="{{ asset('assets/img/boxing2.jpeg') }}" class="glightbox" data-gallery="speakers-gallery">
+                <img src="{{ asset('assets/img/boxing2.jpeg') }}" class="img-fluid" alt="">
               </a>
               <div class="member-info">
                 <div class="member-info-content">
                   <h4><a href="speaker-details.html">Boxing</a></h4>
                   <span>Rabu dan Jum'at</span>
                 </div>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
               </div>
             </div>
           </div><!-- End Team Member -->
@@ -224,19 +188,13 @@
         
           <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="member">
-              <a href="{{ asset('assets/img/speakers/speaker-1.jpg') }}" class="glightbox" data-gallery="speakers-gallery">
-                <img src="{{ asset('assets/img/speakers/speaker-1.jpg') }}" class="img-fluid" alt="">
+              <a href="{{ asset('assets/img/btangkis2.jpeg') }}" class="glightbox" data-gallery="speakers-gallery">
+                <img src="{{ asset('assets/img/btangkis2.jpeg') }}" class="img-fluid" alt="">
               </a>
               <div class="member-info">
                 <div class="member-info-content">
-                  <h4><gkis href="speaker-details.html">Bulu Tangkis</a></h4>
+                  <h4><a href="speaker-details.html">Bulu Tangkis</a></h4>
                   <span>Selasa dan Kamis</span>
-                </div>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
                 </div>
               </div>
             </div>
@@ -245,19 +203,13 @@
         
           <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="member">
-              <a href="{{ asset('assets/img/speakers/speaker-1.jpg') }}" class="glightbox" data-gallery="speakers-gallery">
-                <img src="{{ asset('assets/img/speakers/speaker-1.jpg') }}" class="img-fluid" alt="">
+              <a href="{{ asset('assets/img/futsal2.jpeg') }}" class="glightbox" data-gallery="speakers-gallery">
+                <img src="{{ asset('assets/img/futsal2.jpeg') }}" class="img-fluid" alt="">
               </a>
               <div class="member-info">
                 <div class="member-info-content">
                   <h4><a href="speaker-details.html">Futsal</a></h4>
                   <span>Minggu dan Selasa</span>
-                </div>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
                 </div>
               </div>
             </div>
@@ -282,12 +234,18 @@
 
   <div class="container-fluid" data-aos="fade-up">
     <div class="row g-0">
-      <div class="col-lg-6 alamat-map">
-        <!-- Menggunakan URL yang dinamis untuk Google Maps -->
-        <iframe src="{{ $alamat['map_url'] }}" frameborder="0" style="border:0" allowfullscreen=""></iframe>
-      </div>
+        <div class="col-lg-12 text-center">
+            <iframe 
+                src="{{ $alamat['map_url'] }}" 
+                frameborder="0" 
+                style="border:0; width: 70%; height: 400px;" 
+                allowfullscreen 
+                class="mx-auto d-block">
+            </iframe>
+        </div>
     </div>
-  </div>
+</div>
+
 </section><!-- Alamat Selesai -->
 
 
@@ -324,16 +282,6 @@
               <li><a href="#">Twitter</a></li>
             </ul>
           </div>
-
-          <div class="col-lg-2 col-md-3 footer-links">
-            <h4>Kontak</h4>
-            <ul>
-              <li><a href="#">Facebook</a></li>
-              <li><a href="#">Instagram</a></li>
-              <li><a href="#">Twitter</a></li>
-            </ul>
-          </div>
-
         </div>
       </div>
     </div>

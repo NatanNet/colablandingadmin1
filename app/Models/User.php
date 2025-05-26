@@ -9,7 +9,7 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Filament\Panel;
 
-class User extends Authenticatable implements FilamentUser, MustVerifyEmail   //untuk verivikasi email
+class User extends Authenticatable //implements FilamentUser, MustVerifyEmail   //untuk verivikasi email
 {
     /** @use HasFactory<\Database\Factories\UserFactory> */
     use HasFactory, Notifiable;

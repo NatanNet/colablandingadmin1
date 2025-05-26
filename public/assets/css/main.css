@@ -974,7 +974,7 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Speakers Section
+# Event Olahraga
 --------------------------------------------------------------*/
 .speakers {
   --default-color: #ffffff;
@@ -986,20 +986,30 @@ section,
   overflow: hidden;
 }
 
+/* tambahan supaya ukuran gambar tetap  */
+.speakers .member img {
+  width: 200%;
+  height: 300px;
+  object-fit: cover;
+}
+/* batas ukuran gambar */
+
 .speakers .member .member-info {
   position: absolute;
   padding: 15px 0;
-  inset: auto 0 -44px 0;
+  inset: auto 0 -11px 0;
   background: rgba(0, 0, 0, 0.6);
   transition: 0.4s;
 }
 
+/* untuk info event maupun kegiatan ada efek saat terkena cursor */
 .speakers .member .member-info-content h4 {
   color: var(--contrast-color);
   font-weight: 700;
   margin-bottom: 4px;
   font-size: 16px;
 }
+/* end efek cursor */
 
 .speakers .member .member-info-content h4 a {
   color: var(--contrast-color);
@@ -1036,9 +1046,12 @@ section,
   margin: 0 2px;
 }
 
+/* efek ngayang bg hitamnya */
 .speakers .member:hover .member-info {
   bottom: 0;
+  transform: translateY(-10px);  
 }
+/* end ngayang */
 
 /*--------------------------------------------------------------
 # Schedule Section
