@@ -59,6 +59,9 @@
       <div class="hero-overlay"></div>
       <img src="{{ asset('assets/img/olahraga14.jpg') }}" alt="" data-aos="fade-in">
 
+      <!-- Logo Tro tidak jadi karena ngezoom jadi besar, tapi css udah-->
+       <!-- <img src="{{ asset('assets/img/koni.jpeg') }}" alt="Logo Koni" class="koni-logo"> -->
+
       <div class="container d-flex flex-column align-items-center text-center mt-auto">
         <h2 data-aos="fade-up" data-aos-delay="100" class="">SportEase<br>KONI NGANJUK</h2>        
       </div>
@@ -74,6 +77,7 @@
           </div>
         </div>
       </div>
+
 
     </section><!-- /Hero Section -->
 

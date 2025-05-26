@@ -5,7 +5,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Controllers\LandingPageController;
 use App\Http\Controllers\EventController; // ← FIX: Namespace yang benar
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\OtpController;
+
 
 // Landing Page Route
 Route::get('/', [LandingPageController::class, 'landing']);
@@ -27,4 +27,3 @@ Route::middleware('api')->group(function () {
     Route::get('/events', [App\Http\Controllers\Api\EventController::class, 'index']);
 });
 
-Route::post('send-otp', [OtpController::class, 'sendOtp']);

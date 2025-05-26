@@ -973,6 +973,21 @@ section,
   color: #fff;
 }
 
+/* gae logo koni tro */
+.koni-logo {
+  position: absolute;
+  bottom: 50px; /* sesuaikan agar pas di area lingkaran */
+  right: 100px; /* sesuaikan agar pas di area lingkaran */
+  width: 60px; /* kecilkan ukuran */
+  z-index: 10;
+}
+
+#hero {
+  position: relative;
+}
+/* end logo koni */
+
+
 /*--------------------------------------------------------------
 # Event Olahraga
 --------------------------------------------------------------*/

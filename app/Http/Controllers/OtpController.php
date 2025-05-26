@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Mail;
 use App\Mail\OtpMail;
 
 class OtpController extends Controller
