@@ -9,8 +9,8 @@
   <meta name="keywords" content="">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/logo.png" rel="icon">
+  <link href="assets/img/logo.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -75,9 +75,9 @@
 
         <div class="container position-relative" data-aos="fade-up">
           <div class="row">
-            <div class="col-lg-6">
+            <div class="col-lg-6"> 
               <h2>Tentang Koni Nganjuk</h2>
-              <p>Selamat Datang di Web KONI Kota Nganjuk</p>
+              <p>Selamat Datang di Web KONI Kabupaten Nganjuk</p>
               <p>Komite Olahraga Nasional Indonesia (KONI) adalah satu-satunya organisasi yang berwenang dan bertanggung jawab mengelola, membina, mengembangkan & mengkoordinasikan seluruh pelaksanaan kegiatan olahraga prestasi setiap anggota di Indonesia.</p>
             </div>
           </div>
