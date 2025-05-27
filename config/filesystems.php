@@ -28,24 +28,41 @@ return [
     |
     */
 
+    //baru v2
+
     'disks' => [
+    'local' => [
+        'driver' => 'local',
+        'root' => storage_path('app'),
+        'visibility' => 'private',  // Default private visibility
+    ],  
 
-        'local' => [
-            'driver' => 'local',
-            'root' => storage_path('app/private'),
-            'serve' => true,
-            'throw' => false,
-            'report' => false,
-        ],
+    'public' => [
+        'driver' => 'local',
+        'root' => storage_path('app/public'),
+        'url' => env('APP_URL').'/storage', // URL untuk mengakses file publik
+        'visibility' => 'public', // Agar file dapat diakses secara publik
+    ],
 
-        'public' => [
-            'driver' => 'local',
-            'root' => storage_path('app/public'),
-            'url' => env('APP_URL').'/storage',
-            'visibility' => 'public',
-            'throw' => false,
-            'report' => false,
-        ],
+
+    // 'disks' => [
+
+    //     'local' => [
+    //         'driver' => 'local',
+    //         'root' => storage_path('app/private'),
+    //         'serve' => true,
+    //         'throw' => false,
+    //         'report' => false,
+    //     ],  
+
+    //     'public' => [
+    //         'driver' => 'local',
+    //         'root' => storage_path('app/public'),
+    //         'url' => env('APP_URL').'/storage',
+    //         'visibility' => 'public',
+    //         'throw' => false,
+    //         'report' => false,
+    //     ],
 
         's3' => [
             'driver' => 's3',

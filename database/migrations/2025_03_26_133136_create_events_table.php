@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('lokasi');
             $table->date('tanggal_mulai');
             $table->date('tanggal_selesai');
-    
+            $table->string('banner_image')->nullable();
             $table->timestamps();
         });
     }

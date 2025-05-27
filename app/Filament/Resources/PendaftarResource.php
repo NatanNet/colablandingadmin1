@@ -44,8 +44,8 @@ class PendaftarResource extends Resource
     public static function form(Form $form): Form
     {
         return $form->schema([
-            TextInput::make('name')->required()->maxLength(255)->disabled(),
-            TextInput::make('phone_number')->required()->maxLength(14)->disabled(),
+            TextInput::make('nama')->required()->maxLength(255)->disabled(),
+            TextInput::make('nomer_hp')->required()->maxLength(14)->disabled(),
             Textarea::make('alamat')->required()->maxLength(255)->disabled(),
             Select::make('kategori_olahraga')->options([
                 'football' => 'Football',
@@ -66,8 +66,8 @@ class PendaftarResource extends Resource
         return $table
             ->columns([
                 TextColumn::make('id')->sortable(),
-                TextColumn::make('name')->searchable(),
-                TextColumn::make('phone_number'),
+                TextColumn::make('nama')->searchable(),
+                TextColumn::make('nomer_hp'),
                 TextColumn::make('alamat'),
                 TextColumn::make('kategori_olahraga'),
                 BadgeColumn::make('status'),

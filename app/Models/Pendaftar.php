@@ -21,8 +21,8 @@ class Pendaftar extends Model
     ];
 
     protected $fillable = [
-        'name',
-        'phone_number',
+        'nama',
+        'nomer_hp',
         'alamat',
         'kategori_olahraga',
         'status',

@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('lokasi');
             $table->dateTime('waktu');
             $table->enum('hari', ['Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu', 'Minggu']);
+            $table->string('banner_image')->nullable(); // Kolom untuk menyimpan path gambar
             $table->timestamps();
         });
     }

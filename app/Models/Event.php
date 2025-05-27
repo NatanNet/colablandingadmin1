@@ -16,11 +16,12 @@ class Event extends Model
         'nama_event',
         'deskripsi',
         'lokasi',
-        'waktu',
-        'hari',
         'tanggal_mulai',
         'tanggal_selesai',
         'banner_image',
+        
+        // 'waktu',
+        // 'hari',
     ];
 
     // Hapus file banner saat event dihapus
